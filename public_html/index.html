@@ -1,0 +1,377 @@
+<!DOCTYPE html> <html>
+<head>
+<title>Geo CCTV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+<link href="css/appcss.css" rel="stylesheet" type="text/css"/>
+<link href="css/map.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+<script src="js/map.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<!--Home page-->
+	<div id="home" data-role="page" data-title="GeoCCTV" >
+	
+		<div data-role="header" data-position="fixed">
+			<p class="plink">GeoCCTV</p>
+                        
+			<a href="#login" data-icon="user" data-transition="pop" data-iconpos="right" class="ui-btn-right">
+			Log in</a>
+			
+			
+		</div>
+		
+		<!-- Content -->
+		<div data-role="content">
+			<p class="plink"><b>ตำแหน่งกล้อง CCTV อปล. </b><br><br>
+		
+				<img src="images/GeoCCTVlogo.png" alt="" /><br>
+			
+				<a href="#menu" 
+					data-role="button" 
+					data-inline="true"
+					data-transition="flip" 
+					data-icon="bars" 
+					data-iconpos="right" 
+					class="custom-ui-btn"
+					>
+				Menu</a>
+                                <a href="#notif" 
+					data-role="button" 
+					data-inline="true"
+					data-transition="flip" 
+					data-icon="alert" 
+					data-iconpos="right" 
+					class="custom-ui-btn"
+                                >แจ้งซ่อม</a>
+                                <a href="hello.php" data-role="button"  data-iconpos="right" class="custom-ui-btn" data0inline="true" data-icon="eye">php</a>
+			</p>
+
+		</div>
+
+		<div data-role="footer" 
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar" data-iconpos="left">
+				<ul>
+					<li><a href="#about-us"
+						data-role="button"
+						data-icon="info"
+						
+						data-mini="true"
+						>About Us</a></li>
+					<li><a href="#app-info"
+						data-role="button"
+						data-icon="eye"
+						data-mini="true"
+						
+						>App Info</a></li>
+				</ul>
+			</div>
+			<h4> &copy; 2558 EGAT </h4>
+			
+				
+		</div>
+	</div><!-- Home page-->
+	
+	<!--Menu page-->
+	<div id="menu" 
+		data-role="page" 
+		data-title="Menu">
+		<div data-role="header"
+			data-position="fixed">
+			<p class="plink">
+                        <img src="images/GeoCCTVlogoSSS.png" alt="" /><br>
+                        เลือกสถานีไฟฟ้าที่ต้องการดูตำแหน่งกล้อง
+			</p>
+			
+			<a href="#home" 
+				data-icon="home" 
+				data-iconpos="notext" 
+				data-transition="flip">
+			Home</a>
+			
+			
+		</div>
+		
+		<div data-role="content">
+		
+			<div data-role="controlgroup" data-mini="true">
+			
+                            <div data-role="collapsibleset" data-content-theme="a" data-iconpos="right" id="set">
+				    <div data-role="collapsible" id="bkcctv" data-collapsed="true" >
+					<h3>สฟ.บางกะปิ</h3>
+					        
+                                <li><a href="bkcctv.html#location" data-role="button"
+                                       data-icon="location"
+                                       rel="external"
+                                >ตำแหน่ง กล้อง CCTV</a></li>
+                                <li><a href="devices-list.html"
+                                              data-role="button"
+                                              data-icon="bullets"
+                                              rel="external"
+                                >รายการอุปกรณ์</a></li>
+                                <li><a href="map.html#map-page"
+                                               data-role="button"
+                                               data-icon="location"
+                                               rel="external"
+                                >Geo Location</a></li>     
+				        
+				    </div>
+                                    <div data-role="collapsible" id="bncctv" data-collapsed="true">
+				         <h3>สฟ.บางกอกน้อย</h3>
+				            <li><a href="bncctv.html#location"
+                                                   data-role="button"
+                                                   data-icon="location"
+                                                   rel="external"
+                                                   >ตำแหน่ง กล้อง CCTV</a></li>
+                                            <li><a href="bncctv.html#devices-list"
+                                                   data-role="button"
+                                                   data-icon="bullets"
+                                                   rel="external"
+                                                   >รายการอุปกรณ์</a></li>
+				            
+                                    </div>
+                                    <div data-role="collapsible" id="nbcctv" data-collapsed="true">
+				         <h3>สฟ.พระนครเหนือ</h3>
+				            <li><a href="nbcctv.html#location"
+                                                   data-role="button"
+                                                   data-icon="location"
+                                                   rel="external"
+                                            >ตำแหน่ง กล้อง CCTV</a></li>
+                                            <li><a href="nbcctv.html#devices-list"
+                                                   data-role="button"
+                                                   data-icon="bullets"
+                                                   rel="external"
+                                            >รายการอุปกรณ์</a></li>
+				            
+                                    </div>
+				    
+                            </div>
+			</div>
+					
+		
+		</div>
+		
+		<div data-role="footer" 
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar" data-iconpos="left">
+				<ul>
+					<li><a href="#about-us"
+						data-role="button"
+						data-icon="info"
+						
+						data-mini="true"
+						>About Us</a></li>
+					<li><a href="#app-info"
+						data-role="button"
+						data-icon="eye"
+						data-mini="true"
+						
+						>App Info</a></li>
+				</ul>
+			</div>
+				
+		</div>
+	</div><!--Menu page-->
+	
+	<!--About US-->
+	<div id="about-us" data-role="dialog" data-title="About US">
+		<div data-role="header" data-position="fixed"
+			data-add-back-btn="back">
+			<p class="plink">About Us</p>
+                    
+		</div>
+	
+        <div data-role="content" >
+            <p class="plink">Developer <br>นายปรีชา ธีระวงศ์<br></h1>
+                ฝ่ายปฏิบัติการเขตนครหลวง<br><br>
+                        
+                    <img src="images/GeoCCTVlogoSSS.png" alt="" /><br>
+                      GeoCCTV <br>
+
+            	<a  data-role="button" data-inline="true" data-rel="back" >Close</a>
+            </p>
+        </div>
+		
+	</div><!--About US-->
+	
+	<!--App Info-->
+	<div id="app-info" 
+		data-role="page" 
+		data-title="App Info">
+		<div data-role="header"
+			data-position="fixed">
+			<h1>App Info</h1>
+			<a href="#home" 
+				data-icon="home" 
+				data-iconpos="notext" 
+				data-transition="flip">
+			Home</a>
+			<a href="#menu" 
+				data-transition="flip" 
+				data-icon="bars" 
+				data-iconpos="right" 
+				class="ui-btn-right">
+			Menu</a>
+			
+		</div>
+            
+                <div data-role="content">
+                    <h1> This APP</h1><br>
+                    <p>
+                        Beta
+                    </p>
+                    
+                </div>
+            
+		<div data-role="footer" 
+			data-position="fixed"
+			data-id="vs_footer">
+			<div data-role="navbar" data-iconpos="left">
+				<ul>
+					<li><a href="#about-us"
+						data-role="button"
+						data-icon="info"
+						data-rel="dialog"
+                                                data-mini="true"
+						>About Us</a></li>
+					<li><a href="#app-info"
+						data-role="button"
+						data-icon="eye"
+                                                data-mini="true"
+						
+						>App Info</a></li>
+				</ul>
+			</div>
+				
+		</div>
+	</div><!--App Info-->
+        
+        <!-- แจ้งซ่อม -->
+        <div data-role="page" id="notif">
+            <div data-role="header" data-add-back-btn="back">
+                <h1>แจ้งซ่อม</h1>
+            </div>
+            <div data-role="content">
+                    <form action="" method="post">
+                        <div class="ui-field-contain">
+                            <label>สถานีไฟฟ้า:</label>
+                            <select>
+                                <option>บางกะปิ</option>
+                                <option>บางกอกน้อย</option>
+                                <option>พระนครเหนือ</option>
+                            </select>
+                        </div>
+                        <div class="ui-field-contain">
+                            <label>ประเภทอุปกรณ์:</label>
+                            <select>
+                                <option>กล้อง</option>
+                                <option>สวิตช์</option>
+                                <option>Media Converter</option>
+                                <option>อื่นๆ</option>
+                            </select>
+                        </div>
+                        <div class="ui-field-contain">
+                            <label>ชื่ออุปกรณ์:</label>
+                            <input type="text" name="nam" placeholder="cam1" data-clear-btn="true">
+                        </div>
+                        <div class="ui-field-contain">
+                            <label>อาการเสีย:</label>
+                            <textarea ></textarea>
+                        </div>
+                        <div class="ui-field-contain">
+                            <label>วันที่แจ้ง:</label>
+                            <input type="date" >
+                        </div>
+                        <div class="ui-field-contain">
+                            <label>ชื่อผู้แจ้ง:</label>
+                            <input type="text" name="nam" placeholder="Name" data-clear-btn="true">
+                        </div>
+                        
+                       <div class="ui-field-contain"> 
+                           <fielset data-role="controlgroup" data-type="horizontal">
+                               <button type="submit">Send</button>
+                               <button type="reset">Cancel</button>
+                           
+                           </fielset>
+                       </div>
+                    </form>
+                    
+            </div>
+        </div><!-- แจ้งซ่อม -->
+            
+            <!-- ใส่ข้อมูล -->
+        <div data-role="page" id="input">
+            <div data-role="header" data-add-back-btn="back">
+                <h1>กรอกข้อมูล</h1>
+            </div>
+                <div data-role="content">
+                    <form action="" method="post">
+                        <div class="ui-field-contain">
+                            <label>สถานีไฟฟ้า:</label>
+                            <select>
+                                <option>บางกะปิ</option>
+                                <option>บางกอกน้อย</option>
+                                <option>พระนครเหนือ</option>
+                            </select>
+                        </div>
+                        <div class="ui-field-contain">
+                            <p>ประเภทอุปกรณ์: <input type="text" list="cat" name="cat"></p>
+                            <select id="cat">
+                                <option>กล้อง</option>
+                                <option>สวิตช์</option>
+                                <option>อื่นๆ</option>
+                            </select>
+                        </div>
+                        <div class="ui-field-contain">
+                            <label>ชื่ออุปกรณ์:</label>
+                            <input type="text" name="nam" placeholder="cam1" data-clear-btn="true">
+                        </div>
+                       
+                       <div class="ui-field-contain"> 
+                           <fielset data-role="controlgroup" data-type="horizontal">
+                               <button type="submit">Send</button>
+                               <button type="reset">Cancel</button>
+                           
+                           </fielset>
+                       </div>
+                    </form>
+                    
+                </div>
+            </div><!-- ใส่ข้อมูล -->
+            
+            <!-- Log in -->
+            <div data-role="dialog" id="login">
+                <div data-role="header" data-add-back-btn="back">
+                    <h1>log in</h1>
+                </div>
+                <div data-role="content">
+                    <form action="" method="post">
+                        <div class="ui-field-contain">
+                            <label>username:</label>
+                            <input type="text" name="username" placeholder="Name" data-clear-btn="true">
+                        </div>
+                        <div class="ui-field-contain">
+                            <label>Password:</label>
+                            <input type="password" name="pswd" data-clear-btn="true">
+                        </div>
+                        <div class="ui-field-contain"> 
+                           <fielset data-role="controlgroup" data-type="horizontal">
+                               <button type="submit">Send</button>
+                               <button type="reset">Cancel</button>
+                           
+                           </fielset>
+                       </div>
+                    </form>
+                
+                </div>
+            </div>
+             
+	
+</body>
+</html>
